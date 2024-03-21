@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter IP Address</title>
+</head>
+<body>
+    <h2>Enter IP Address</h2>
+    <form action="/" method="post">
+        {% csrf_token %}
+        <label for="input_data">IP:</label>
+        <input type="text" id="input_data" name="input_data" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
